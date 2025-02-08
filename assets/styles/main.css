@@ -1,3 +1,27 @@
 /* 
 font-family: "Poppins", serif;
 */
+:root{
+    --white-color:#ffffff;
+    --dark-color:#000000;
+    --primary-color:#F2F0F1;
+    --secondary-color:#F0F0F0;
+    --card-color:#F0EEED;
+    --text-color-60:rgba(0 0 0 /.60);
+    --text-color-40:rgba(0 0 0 /.40);
+    --border-color-10:rgba(0 0 0 /.10);
+    --fs-64px:64px;
+    --fs-48px:48px;
+    --fs-40px:40px;
+    --fs-36px:36px;
+    --fs-32px:32px;
+    --fs-28px:28px;
+    --fs-24px:24px;
+    --fs-20px:20px;
+    --fs-16px:16px;
+    --fs-14px:14px;
+    --fw-bold-700:700;
+    --fw-semibold-600:600;
+    --fw-medium-500:500;
+    --fw-regular-400:400;
+}
