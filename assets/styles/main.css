@@ -84,6 +84,9 @@ img{
 .grid{
     display: grid;
 }
+.text-center{
+    text-align: center;
+}
 h1.title{
     font-size: clamp(var(--fs-36px), 5vw, var(--fs-64px));
     font-weight: var(--fw-bold-700);
