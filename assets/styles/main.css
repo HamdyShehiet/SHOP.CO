@@ -156,6 +156,9 @@ span.product-title{
 .banar .container .sign-up-message a{
     font-size: clamp(var(--fs-14px), 3vw, var(--fs-16px));
 }
+.banar .container i{
+    cursor: pointer;
+}
 @media (min-width:992px) {
     .banar .container .sign-up-message{
         justify-content: center;
