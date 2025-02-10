@@ -22,6 +22,7 @@
     --fs-20px:20px;
     --fs-16px:16px;
     --fs-14px:14px;
+    --fs-12px:12px;
     --fw-bold-700:700;
     --fw-semibold-600:600;
     --fw-medium-500:500;
@@ -46,7 +47,7 @@ main section{
 ul{
     list-style: none;
 }
-a{
+a:not(.banar .container .sign-up-message a){
     text-decoration: none;
 }
 input,
@@ -86,6 +87,9 @@ img{
 }
 .text-center{
     text-align: center;
+}
+.align-center{
+    align-items: center;
 }
 h1.title{
     font-size: clamp(var(--fs-36px), 5vw, var(--fs-64px));
@@ -133,3 +137,27 @@ span.product-title{
     color: var(--dark-color);
 }
 /* Components */
+.banar{
+    padding: 10px;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+.banar .container{
+    gap: 30px;
+}
+.banar .container .sign-up-message{
+    flex-wrap: wrap;
+    flex-grow: 1;
+    font-weight: var(--fw-medium-500);
+}
+.banar .container .sign-up-message p{
+    font-size: clamp(var(--fs-12px), 3vw, var(--fs-14px));
+}
+.banar .container .sign-up-message a{
+    font-size: clamp(var(--fs-14px), 3vw, var(--fs-16px));
+}
+@media (min-width:992px) {
+    .banar .container .sign-up-message{
+        justify-content: center;
+    }
+}
