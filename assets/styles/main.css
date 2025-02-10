@@ -35,7 +35,6 @@ body{
     font-family: "Poppins", serif;
     font-weight: var(--fw-regular-400);
     background-color: var(--white-color);
-    min-height: 5000vh;
 }
 main section{
     padding: 30px 0;
@@ -48,8 +47,6 @@ ul{
     list-style: none;
 }
 a{
-    font: inherit;
-    color: inherit;
     text-decoration: none;
 }
 input,
@@ -60,6 +57,7 @@ textarea{
     border: none;
     outline: none;
 }
+a,
 span{
     font: inherit;
     color: inherit;
@@ -67,3 +65,68 @@ span{
 img{
     max-width: 100%;
 }
+/* Utility Classes */
+.flex{
+    display: flex;
+}
+.flex-column-start{
+    flex-direction: column;
+    align-items: start;
+}
+.flex-column-center{
+    flex-direction: column;
+    align-items: center;
+}
+.i-flex{
+    display: inline-flex;
+    align-items: center;
+}
+.grid{
+    display: grid;
+}
+h1.title{
+    font-size: clamp(var(--fs-36px), 5vw, var(--fs-64px));
+    font-weight: var(--fw-bold-700);
+    color: var(--dark-color);
+}
+h2.title{
+    font-size: clamp(var(--fs-32px), 5vw, var(--fs-48px));
+    font-weight: var(--fw-bold-700);
+    color: var(--dark-color);
+}
+h3.title{
+    font-size: clamp(var(--fs-24px), 5vw, var(--fs-36px));
+    font-weight: var(--fw-bold-700);
+    color: var(--dark-color);
+}
+span.product-title{
+    font-size: clamp(var(--fs-16px), 5vw, var(--fs-20px));
+    font-weight: var(--fw-bold-700);
+    color: var(--dark-color);
+}
+.description-primary{
+    line-height: 1.6;
+    font-size: var(--fs-16px);
+    color: var(--text-color-60);
+}
+.description-secondary{
+    line-height: 1.6;
+    font-size: var(--fs-14px);
+    color: var(--text-color-60);
+}
+.special-btn{
+    display: inline-flex;
+    padding: 16px 54px;
+    font-size: var(--fs-16px);
+    font-weight: var(--fw-medium-500);
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+.view-all-btn{
+    display: inline-flex;
+    padding: 16px 54px;
+    border: 1px solid var(--border-color-10);
+    background-color: transparent;
+    color: var(--dark-color);
+}
+/* Components */
