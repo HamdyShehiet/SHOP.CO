@@ -156,11 +156,105 @@ span.product-title{
 .banar .container .sign-up-message a{
     font-size: clamp(var(--fs-14px), 3vw, var(--fs-16px));
 }
-.banar .container i{
+i{
     cursor: pointer;
 }
 @media (min-width:992px) {
     .banar .container .sign-up-message{
         justify-content: center;
+    }
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 20px 0;
+    background-color: var(--white-color);
+    box-shadow: 0 4px 4px 0 rgba(0 0 0 /.04);
+}
+header .container{
+    justify-content: space-between;
+    gap: 35px;
+}
+header .container .col .logo{
+    margin-left: 15px;
+    font-size: clamp(var(--fs-24px) ,5vw ,var(--fs-32px));
+    font-weight: var(--fw-bold-700);
+    color: var(--dark-color);
+}
+header .container nav .icons{
+    gap: 10px;
+}
+header .container nav ul li a{
+    font-size: var(--fs-16px);
+    color: var(--dark-color);
+}
+@media (max-width:991px) {
+    header .container  nav ul{
+        position: fixed;
+        top: 150px;
+        left: -100%;
+        z-index: 9;
+        max-width: 250px;
+        width: 60%;
+        border-radius: 15px;
+        box-shadow: 0 4px 4px 0 rgba(0 0 0 /.20);
+        background-color: var(--primary-color);
+        transition: all 200ms ease;
+    }
+    header .container nav ul.menu{
+        left: 15px;
+    }
+    header .container nav ul li a{
+        display: block;
+        margin: 30px;
+        text-align: center;
+    }
+    header .container nav ul li a.shop span{
+        margin-right: 5px;
+    }
+    header .container nav .search-box{
+        display: none;
+    }
+    header .container .col .menu-icon{
+        font-size: var(--fs-24px);
+    }
+} 
+@media (min-width:992px) {
+    header .container nav .menu-icon{
+        display: none;
+    }
+    header .container nav{
+        justify-content: space-between;
+        flex-grow: 1; 
+        gap: 10px;
+    }
+    header .container nav ul{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    header .container nav .search-box{
+        display: flex;
+        gap: 10px;
+        max-width: 350px;
+        width: 100%;
+        padding: 12px 16px;
+        border-radius: 62px;
+        background-color: var(--secondary-color);
+    }
+    header .container nav .search-box input{
+        background-color: transparent;
+    }
+    header .container nav ul li a.shop{
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+    }
+    header .container nav .icons .search-icon{
+        display: none;
+    }
+    header .container .col .menu-icon{
+        display: none;
     }
 }
