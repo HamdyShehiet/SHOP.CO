@@ -4,9 +4,11 @@ document.getElementById("close-banar").onclick = ()=>{
 
 document.getElementById("menu-icon").onclick = () => {
     if(document.getElementById("menu").classList.contains("menu")){
-        document.getElementById("menu").classList.remove("menu")
+        document.getElementById("menu").classList.remove("menu");
+        document.getElementById("menu-icon").classList.replace("fa-x","fa-bars");
     }else{
         document.getElementById("menu").classList.add("menu")
+        document.getElementById("menu-icon").classList.replace("fa-bars","fa-x");
     }
 }
 
