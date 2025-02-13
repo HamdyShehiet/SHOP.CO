@@ -38,7 +38,7 @@ body{
     font-weight: var(--fw-regular-400);
     background-color: var(--white-color);
 }
-main section{
+main section:not(section.hero){
     padding: 30px 0;
 }
 .container{
@@ -93,6 +93,7 @@ img{
     align-items: center;
 }
 h1.title{
+    line-height: 1;
     font-size: clamp(var(--fs-36px), 5vw, var(--fs-64px));
     font-weight: var(--fw-bold-700);
     color: var(--dark-color);
@@ -125,6 +126,7 @@ span.product-title{
 .special-btn{
     display: inline-flex;
     padding: 16px 54px;
+    border-radius: 62px;
     font-size: var(--fs-16px);
     font-weight: var(--fw-medium-500);
     background-color: var(--dark-color);
