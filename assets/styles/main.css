@@ -272,3 +272,45 @@ header .container nav .search-box{
         display: none;
     }
 }
+.hero {
+    min-height: calc(100vh - 200px);
+    padding-top: 30px;
+    background-color: brown;
+    background-color: var(--primary-color);
+}
+.hero .container{
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 30px;
+}
+.hero .container article.info{
+    gap: 20px;
+}
+.hero .container article.info .about-us{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.hero .container article.info .about-us div span:first-child{
+    font-size: var(--fs-40px);
+    font-weight: var(--fw-bold-700);
+    color: var(--dark-color);
+}
+.hero .container article.info .about-us div span.title{
+    font-size: var(--fs-16px);
+    color: var(--text-color-60);
+}
+@media (min-width:992px) {
+    .hero .container{
+        justify-content: space-between;
+    }
+    .hero .container article.info{
+        width: 50%;
+    }
+    .hero .container .hero-image{
+        width: 45%;
+    }
+.hero .container article.info .about-us{
+    width: 100%;
+}
+}
