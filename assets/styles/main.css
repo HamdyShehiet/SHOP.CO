@@ -276,7 +276,7 @@ header .container nav .search-box{
 }
 .hero {
     min-height: calc(100vh - 200px);
-    padding-top: 30px;
+    padding-top: 40px;
     background-color: var(--primary-color);
 }
 .hero .container{
@@ -284,6 +284,11 @@ header .container nav .search-box{
 }
 .hero .container article.info{
     gap: 20px;
+    margin-bottom: 30px;
+}
+.hero .container .hero-image{
+    align-self: end;
+    justify-content: center;
 }
 .hero .container article.info .about-us{
     justify-content: space-around;
@@ -307,3 +312,14 @@ header .container nav .search-box{
         align-items: center;
     }
 }
+.our-partners{
+    background-color: var(--dark-color);
+}
+.our-partners .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 47px;
+}
+.our-partners .container a{
+    width: min(210px, 100%);
+} 
