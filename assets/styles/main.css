@@ -181,7 +181,6 @@ header .container{
     gap: 35px;
 }
 header .container .col .logo{
-    margin-left: 15px;
     font-size: clamp(var(--fs-20px) ,5vw ,var(--fs-32px));
     font-weight: var(--fw-bold-700);
     color: var(--dark-color);
@@ -205,6 +204,9 @@ header .container nav .search-box{
     background-color: var(--secondary-color);
 }
 @media (max-width:991px) {
+    header .container .col .logo{
+        margin-left: 15px;
+    }
     header .container  nav ul{
         position: absolute;
         top: 100px;
@@ -275,12 +277,9 @@ header .container nav .search-box{
 .hero {
     min-height: calc(100vh - 200px);
     padding-top: 30px;
-    background-color: brown;
     background-color: var(--primary-color);
 }
 .hero .container{
-    flex-wrap: wrap;
-    align-items: center;
     row-gap: 30px;
 }
 .hero .container article.info{
@@ -290,27 +289,21 @@ header .container nav .search-box{
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
+    margin-top: 25px;
 }
 .hero .container article.info .about-us div span:first-child{
-    font-size: var(--fs-40px);
+    font-size: var(--fs-32px);
     font-weight: var(--fw-bold-700);
     color: var(--dark-color);
 }
 .hero .container article.info .about-us div span.title{
-    font-size: var(--fs-16px);
+    font-size: var(--fs-14px);
     color: var(--text-color-60);
 }
 @media (min-width:992px) {
     .hero .container{
+        grid-template-columns: 500px 49%;
         justify-content: space-between;
+        align-items: center;
     }
-    .hero .container article.info{
-        width: 50%;
-    }
-    .hero .container .hero-image{
-        width: 45%;
-    }
-.hero .container article.info .about-us{
-    width: 100%;
-}
 }
