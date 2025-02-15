@@ -328,10 +328,10 @@ header .container nav .search-box{
 .our-partners .container a{
     width: min(210px, 100%);
 } 
-.new {
+.products {
     position: relative;
 }
-.new::after{
+.products::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -342,33 +342,33 @@ header .container nav .search-box{
     margin: auto;
     background-color: var(--border-color-10);
 }
-.new .container .new-products{
+.products .container .products-list{
     grid-template-columns: repeat(auto-fit, min(295px, 100%));
     justify-content: center;
     gap:40px 20px;
     margin: 40px 0;
 }
-.new .container .new-products .product{
+.products .container .products-list .product{
     gap: 7px;
 }
-.new .container .new-products .product .product-image img{
+.products .container .products-list .product .product-image img{
     border-radius: 20px;
 }
-.new .container .new-products .product .product-rate{
+.products .container .products-list .product .product-rate{
     gap: 20px;
 }
-.new .container .new-products .product .product-rate .stars{
+.products .container .products-list .product .product-rate .stars{
     gap: 5px;
 }
-.new .container .new-products .product .product-rate .final-rating span:first-child{
+.products .container .products-list .product .product-rate .final-rating span:first-child{
     font-size: var(--fs-16px);
     color: var(--dark-color);
 }
-.new .container .new-products .product .product-rate .final-rating span:last-child{
+.products .container .products-list .product .product-rate .final-rating span:last-child{
     font-size: var(--fs-16px);
     color: var(--text-color-60);
 }
-.new .container .new-products .product  span.price{
+.products .container .products-list .product  span.price{
     font-size: var(--fs-24px);
     font-weight: var(--fw-bold-700);
     color: var(--dark-color);
