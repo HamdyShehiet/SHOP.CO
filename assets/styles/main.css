@@ -353,6 +353,7 @@ header .container nav .search-box{
 }
 .products .container .products-list .product .product-image img{
     border-radius: 20px;
+    width: 100%;
 }
 .products .container .products-list .product .product-rate{
     gap: 20px;
@@ -372,4 +373,27 @@ header .container nav .search-box{
     font-size: var(--fs-24px);
     font-weight: var(--fw-bold-700);
     color: var(--dark-color);
+}
+.browse .container{
+    padding: 40px 10px;
+    border-radius: 40px;
+    background-color: var(--secondary-color);
+}
+.browse .container .categories{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 80px;
+    margin-top: 60px;
+}
+.browse .container .categories .category{
+    position: relative;
+    max-width: 354px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.browse .container .categories .category h3{
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
