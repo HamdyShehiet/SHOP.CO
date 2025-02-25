@@ -525,3 +525,24 @@ footer .footer-top .container .col span{
     font-weight: var(--fw-medium-500);
     color: var(--dark-color);
 }
+footer .footer-bottom .container{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+footer .footer-bottom .container .payment-methods{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+footer .footer-bottom .container a{
+    padding: 12px 24px ;
+    border-radius: 6px;
+    background-color: var(--white-color);
+}
+@media (min-width:992px) {
+    footer .footer-bottom .container{
+        justify-content: space-between;
+    }
+}
