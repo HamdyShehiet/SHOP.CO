@@ -40,7 +40,7 @@ body{
     font-weight: var(--fw-regular-400);
     background-color: var(--white-color);
 }
-section:not(section.hero){
+main section:not(section.hero){
     padding: 40px 0;
 }
 .container{
@@ -478,10 +478,16 @@ header .container nav .search-box{
         justify-content: space-between;
     }
 }
+footer section{
+    background-color: var(--secondary-color);
+    padding: 25px;
+}
 footer .footer-top .container{
     grid-template-columns: repeat(auto-fit, min(230px, 100%));
     justify-content: center;
     gap: 22px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border-color-10);
 }
 footer .footer-top .container .col.info{
     gap: 20px;
